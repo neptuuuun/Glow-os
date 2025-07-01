@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow OS — 24h Glow Circle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="glow-header">
+    <h1>🌸 Glow OS — 24h Glow Circle</h1>
+  </header>
+  <main class="glow-dashboard">
+    <section class="circle-section">
+      <div class="circle-container">
+        <svg id="glow-circle" viewBox="0 0 320 320" width="320" height="320"></svg>
+        <div class="circle-center">
+          <span id="circle-time-left"></span>
+        </div>
+      </div>
+      <div class="circle-warning" id="circle-warning"></div>
+    </section>
+    <section class="task-section">
+      <h2>✨ My Day Tasks</h2>
+      <div class="task-table-wrapper">
+        <table class="task-table" id="task-table">
+          <thead>
+            <tr>
+              <th>Done</th>
+              <th>Task</th>
+              <th>Duration</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="task-list">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+        <button id="add-task-btn" class="add-task-btn">+ Add Task</button>
+      </div>
+      <div class="task-footer">
+        <span id="total-time"></span>
+        <button id="reset-btn" class="reset-btn">Reset Day</button>
+      </div>
+    </section>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>
