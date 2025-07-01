@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow OS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="glow-header">
+    <h1>🌸 Glow OS ✨</h1>
+  </header>
+  <!-- Motivational Quote Box -->
+  <section class="quote-section">
+    <div class="quote-box" id="quote-box">
+      <span id="quote-text"></span>
+    </div>
+  </section>
+  <main class="dashboard">
+    <!-- Progress Flower/Star -->
+    <section class="progress-section">
+      <div class="progress-flower" id="progress-flower">
+        <!-- SVG will be injected here -->
+      </div>
+      <div class="progress-label" id="progress-label"></div>
+    </section>
+    <!-- Glow Up Section -->
+    <section class="habit-section">
+      <h2>✨ Glow Up</h2>
+      <div class="habit-list" id="glow-up-habits"></div>
+    </section>
+    <!-- Religion Section -->
+    <section class="habit-section">
+      <h2>🕋 Religion</h2>
+      <div class="habit-list" id="religion-habits"></div>
+    </section>
+    <!-- Freelance / Career Section -->
+    <section class="habit-section">
+      <h2>💻 Freelance / Career</h2>
+      <div class="habit-list" id="career-habits"></div>
+    </section>
+    <!-- Brain Glow-Up Section -->
+    <section class="habit-section">
+      <h2>🧠 Brain Glow-Up</h2>
+      <div class="habit-list" id="brain-habits"></div>
+    </section>
+    <!-- Content Creation Section -->
+    <section class="habit-section">
+      <h2>🎨 Content Creation</h2>
+      <div class="habit-list" id="content-habits"></div>
+    </section>
+    <!-- Lifestyle / Home Section -->
+    <section class="habit-section">
+      <h2>🧼 Lifestyle / Home</h2>
+      <div class="habit-list" id="lifestyle-habits"></div>
+    </section>
+    <!-- Glow Mindset / Self-Love Section -->
+    <section class="habit-section">
+      <h2>💗 Glow Mindset / Self-Love</h2>
+      <div class="habit-list" id="mindset-habits"></div>
+    </section>
+    <!-- Mood Tracker -->
+    <section class="mood-section">
+      <h2>Mood Tracker</h2>
+      <div class="mood-tracker">
+        <button class="mood-btn" data-mood="happy" aria-label="Happy">😊</button>
+        <button class="mood-btn" data-mood="neutral" aria-label="Neutral">😐</button>
+        <button class="mood-btn" data-mood="sad" aria-label="Sad">😔</button>
+      </div>
+    </section>
+    <!-- Daily/Weekly History Tracker -->
+    <section class="history-section">
+      <h2>📆 Progress Streak</h2>
+      <div class="history-bar" id="history-bar"></div>
+    </section>
+    <!-- Journal Section -->
+    <section class="journal-section">
+      <h2>📖 Daily Reflection</h2>
+      <div class="journal-prompt" id="journal-prompt"></div>
+      <textarea id="journal-entry" placeholder="Write your thoughts here..."></textarea>
+      <button id="save-journal" class="journal-save-btn">Save Entry</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
